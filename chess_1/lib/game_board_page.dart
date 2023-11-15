@@ -59,11 +59,11 @@ class _GameBoardState extends State<GameBoard> {
     List<List<ChessPiece?>> newBoard =
         List.generate(8, (index) => List.generate(8, (index) => null));
 
-    // random piece in the midle to test
-    // newBoard[3][3] = ChessPiece(
-    //    type: ChessPieceType.bishop,
+   // random piece in the midle to test
+    // newBoard[3][3] =  ChessPiece(
+    //     type: ChessPieceType.rook,
     //     isWhite: true,
-    //      imagePath: 'assets/images/bishop.png');
+    //     imagePath: 'assets/images/chess.png');
 
     // PLace Pawns
     for (int i = 0; i < 8; i++) {
@@ -237,7 +237,7 @@ class _GameBoardState extends State<GameBoard> {
           var i = 1;
           while (true) {
             var newRow = row + i * direction[0];
-            var newCol = row + i * direction[1];
+            var newCol = col + i * direction[1];
             if (!isInBoard(newRow, newCol)) {
               break;
             }
