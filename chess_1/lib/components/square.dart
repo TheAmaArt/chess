@@ -32,7 +32,7 @@ class Square extends StatelessWidget {
 // otherweise its  white or black
 
     else {
-      squareColor = isWhite ? foregroundColor : backgroundColor;
+      squareColor = isWhite ? foregroundColor : kPrimaryBackgroundColor;
     }
 
     return GestureDetector(
@@ -43,7 +43,7 @@ class Square extends StatelessWidget {
         child: piece != null
             ? Image.asset(
                 piece!.imagePath,
-                color: piece!.isWhite ? Colors.yellow : Colors.pink,
+                color: piece!.isWhite ? Colors.white : Colors.black,
               )
             : null,
       ),

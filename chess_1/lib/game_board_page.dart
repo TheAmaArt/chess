@@ -81,37 +81,37 @@ class _GameBoardState extends State<GameBoard> {
     newBoard[0][0] = ChessPiece(
         type: ChessPieceType.rook,
         isWhite: false,
-        imagePath: 'assets/images/chess.png');
+        imagePath: 'assets/images/rook.png');
     newBoard[0][7] = ChessPiece(
         type: ChessPieceType.rook,
         isWhite: false,
-        imagePath: 'assets/images/chess.png');
+        imagePath: 'assets/images/rook.png');
     newBoard[7][0] = ChessPiece(
         type: ChessPieceType.rook,
         isWhite: true,
-        imagePath: 'assets/images/chess.png');
+        imagePath: 'assets/images/rook.png');
     newBoard[7][7] = ChessPiece(
         type: ChessPieceType.rook,
         isWhite: true,
-        imagePath: 'assets/images/chess.png');
+        imagePath: 'assets/images/rook.png');
 
     // Place knights
     newBoard[0][1] = ChessPiece(
         type: ChessPieceType.knight,
         isWhite: false,
-        imagePath: 'assets/images/knight.png');
+        imagePath: 'assets/images/knightr.png');
     newBoard[0][6] = ChessPiece(
         type: ChessPieceType.knight,
         isWhite: false,
-        imagePath: 'assets/images/knight.png');
+        imagePath: 'assets/images/knightl.png');
     newBoard[7][1] = ChessPiece(
         type: ChessPieceType.knight,
         isWhite: true,
-        imagePath: 'assets/images/knight.png');
+        imagePath: 'assets/images/knightr.png');
     newBoard[7][6] = ChessPiece(
         type: ChessPieceType.knight,
         isWhite: true,
-        imagePath: 'assets/images/knight.png');
+        imagePath: 'assets/images/knightl.png');
 
     // Place bishops
     newBoard[0][2] = ChessPiece(
@@ -135,21 +135,21 @@ class _GameBoardState extends State<GameBoard> {
     newBoard[0][3] = ChessPiece(
         type: ChessPieceType.queen,
         isWhite: false,
-        imagePath: 'assets/images/crown.png');
-    newBoard[7][4] = ChessPiece(
+        imagePath: 'assets/images/queen.png');
+    newBoard[7][3] = ChessPiece(
         type: ChessPieceType.queen,
         isWhite: true,
-        imagePath: 'assets/images/crown.png');
+        imagePath: 'assets/images/queen.png');
 
     // Place kings
     newBoard[0][4] = ChessPiece(
         type: ChessPieceType.king,
         isWhite: false,
-        imagePath: 'assets/images/crown (1).png');
-    newBoard[7][3] = ChessPiece(
+        imagePath: 'assets/images/king.png');
+    newBoard[7][4] = ChessPiece(
         type: ChessPieceType.king,
         isWhite: true,
-        imagePath: 'assets/images/crown (1).png');
+        imagePath: 'assets/images/king.png');
 
     board = newBoard;
   }
@@ -569,7 +569,7 @@ return realValidMoves;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: kPrimaryBackgroundColor2,
       body: Column(
         children: [
           //WHITE PIECES TAKEN
